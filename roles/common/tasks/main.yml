@@ -1,0 +1,8 @@
+---
+- name: install vim and zip
+  package:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - zip
+    - vim
